@@ -1,0 +1,15 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta carset="utf-8">
+    <title>{% block title %}Photographs by Arbogast{% endblock %} </title>
+</head>
+<body>
+{% include 'navbar.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
